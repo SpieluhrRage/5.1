@@ -29,6 +29,7 @@ float evk2(float a, float b) {
 }
 
 int main() {
+	cout << "¬ведите через пробел два числа: ";
 	float a, b;
 	cin >> a >> b;
 	cout << evkDel(a, b) << " " << evk2(a, b);
