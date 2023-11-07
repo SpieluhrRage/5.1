@@ -29,6 +29,7 @@ float evk2(float a, float b) {
 }
 
 int main() {
+	setlocale(LC_ALL, "Rus");
 	cout << "¬ведите через пробел два числа: ";
 	float a, b;
 	cin >> a >> b;
