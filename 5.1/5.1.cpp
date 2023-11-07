@@ -16,7 +16,7 @@ int evkDel(int a, int b) {
 	}
 	return a + b;
 }
-float evk2(float a, float b) {
+int evk2(int a, int b) {
 	while (a != b) {
 		if (a > b) {
 			a = a - b;
@@ -30,9 +30,13 @@ float evk2(float a, float b) {
 
 int main() {
 	setlocale(LC_ALL, "Rus");
-	cout << "¬ведите через пробел два числа: ";
-	float a, b;
+	cout << "¬ведите через пробел два целых положительных числа: ";
+	int a, b;
 	cin >> a >> b;
+	while (a <= 0 || b <= 0) {
+		cout << "try again." << endl;
+		cin >> a >> b;
+	}
 	cout << evkDel(a, b) << " " << evk2(a, b);
 
 }
